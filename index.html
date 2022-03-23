@@ -1,0 +1,79 @@
+<!-- Sukurkite puslapį kuriame būtų panaudoti:
+Selectoriai pagal žymą/tag
+Selectoriai pagal klasę
+Selektoriai pagal id
+Keičiama teksto spalva
+Keičiama teksto fono spalva
+Keičiamas teksto dydis
+Keičiamas šriftas
+Panagrinėkite, ką dar galima pakeisti naudojantis CSS, išbandykite kuo daugiau CSS galimybių -->
+
+
+<!-- Nukopijuokite paskutinės pamokos puslapį, arba sukurkitę naują ir papildykite jo stilius šiais atributais:
+padding
+border-style
+border-width
+border-color
+margin
+
+background-color
+Papildomai, naudokite left, top, bottom, right tam kad nurodytumėte į kurias puses taikyti stilių, pvz: padding-top: 10px -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atostogos Žiemą</title>
+</head>
+    <!-- linking css file with html file -->
+    <link rel="stylesheet" href="style.css"/>
+
+<body>
+    <h1 id = "title"> Kur važiuoti atostogauti žiemą!</h1>
+
+    <div id = "info">
+        <h2>Kaip pasirinkti kelionės kryptį?</h2>
+
+        <li>Svajojate apie saulėtas atostogas žiemą?</li>
+        <li>Norite keliauti su šeima?</li>  
+        <li>Pageidaujate patogaus ir erdvaus viešbučio?</li>
+        <li>Mėgstate skaniai pavalgyti?</li>    
+        
+    </div>
+    
+    <div id = "choices">
+        <ol>
+            <li><a href="#madeira">Madeira</a></li>
+            <li><a href="#lansarote">Lansarotė</a></li>
+            <li><a href="#tenerife">Tenerifė</a></li>
+            <li><a href="#antalija">Antalija</a></li>
+        </ol>
+    
+    </div>  
+
+    <div id = "description">
+        <h1>Miestai</h1>
+
+        <h2 id = "madeira" class="city">Madeira</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Funchal_%28_Portugal_%2913.jpg" alt="Madeira-foto">
+        <p>Kelionė į amžinojo pavasario salą Madeirą! Tiesioginis skrydis iš Vilniaus ir 7 nakvynės viešbutyje „Dorisol Buganvilia.....</p>
+        
+        <h2 id = "lansarote" class="city">Lansarotė</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Playa_Blanca_Town_Promenade_and_Beach_01.JPG" alt="Lansarotė-foto">
+        <p>Atostogos Lansarotė turistų dar neatrasta žemė, stebinanti ugnikalniais ir žavinti paplūdimiais.....</p>
+        
+        <h2 id = "tenerife" class="city">Tenerifė</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Sunset_las_americas_tenerife.JPG" alt="Tenerifė-foto">
+        <p>Atostogos Tenerifėje: tiesioginis skrydis iš Vilniaus ir 7 nakvynės apartamentuose „Laguna Park II“.....</p>
+
+        <h2 id = "antalija" class="city">Antalija</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Falezlerden_Antalya_Konyaaltı_Plajına_doğru_bir_görünüm.jpg" alt="Antalija-foto">
+        <p>Atostogos Turkijoje: skrydis iš Vilniaus ir savaitė 4* viešbutyje „Grand Atilla“.....</p>
+    </div>  
+
+</body>
+</html>
