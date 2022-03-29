@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Payment</title>
+</head>
+
+<body>
+  <form> 
+    <h1>Payment form</h1>
+    <p>Required fields are followed by <abbr title="This field is required">*</abbr></p>
+    <h2>Contact information</h2>
+    
+    <fieldset class="align-right">
+      <legend>Title:</legend>
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Mister</label><br>
+
+        <input type="radio" id="gender" name="gender">
+        <label for="gender">Miss</label>
+    </fieldset>
+    <br>
+    <table class="align-right"> 
+     <tr>
+        <td><label for="fname">Name:<abbr title="This field is required">*</abbr></label></td>
+        <td><input type="text" id="fname" name="fname"/></td>
+      </tr> 
+
+      <tr>
+        <td><label for="email">E-mail:<abbr title="This field is required">*</abbr></label></td>
+        <td><input type="email" id="email" name="email" /></td>
+      </tr>  
+      <tr>
+        <td><label for="password">Password:<abbr title="This field is required">*</abbr></label></td>
+        <td><input type="password" id="password" name="password" /></td>
+      </tr>  
+    </table>         
+  
+    <h1>Payment information</h1>
+
+        <div class="align-right">
+          <label for="select">Card type:</label>
+            <select  id="select" name="select">
+              <optgroup>
+                <option>Visa</option>
+                <option>Mastercard</option>
+              </optgroup>
+            </select>
+        </div>
+
+        <table class="align-right">
+          <tr>
+          <td><label for="ccn">Card Number:<abbr title="This field is required">*</abbr></label></td>
+          <td><input id="ccn" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx"></td>
+          </tr>
+        
+          <tr>
+          <td><label for="meeting-time">Expiration date:<abbr title="This field is required">*</abbr></label></td>
+          <td><input type="text" id="inputExpDate" name="meeting-time" placeholder="MM / YY" maxlength="'7"></td>
+          </tr>
+        </table>
+
+        <div class="align-right">
+          <button type="submit">Validate Payment</button>
+        </div>
+       
+
+      
+    </form>
+</body>
+</html>
